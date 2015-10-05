@@ -54,9 +54,9 @@ terraform.tfvars
 # Folder #
 ######################
 ssh/*
+.idea/*
 
 # intellj #
 ######################
-.idea/*
 mi.iml
 
