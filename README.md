@@ -1,4 +1,4 @@
-# terraform_ansible_mesos_consul-cluster
+# terraform_ansible_mesos_consul_cluster
 Create a AWS HA Cluster with ansible, terraform , mesos, zk, consul, marathon , chronos and docker in CentOS 7
 
 To Launch this cluster:
