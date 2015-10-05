@@ -27,12 +27,38 @@ For viewing the consul url you would have to create a tunnel to one of the maste
 ```
 ssh -i pathtoprivatekey -N -f -L 8500:localhost:8500 centos@ec2-xx-xxx-xxx-xxx.us-west-1.compute.amazonaws.com
 ```
-Onece the tunnel is created you could view the consul ui from (http://localhost:8500)
+Once the tunnel is created you could view the consul ui from your laptop at 
+[localhost](http://localhost:8500)
 
 You can now test adding a docker container to marathon using the information provided below. 
-(http://panda.mesosphere.io.s3-website-us-east-1.amazonaws.com/docs/tutorials/launch-docker-container-on-mesosphere/)
+[launch-docker-container-on-mesosphere](http://panda.mesosphere.io.s3-website-us-east-1.amazonaws.com/docs/tutorials/launch-docker-container-on-mesosphere/)
 
 You can now check the status of the container from the consul UI. 
+
+##Component Installed:##
+** Control Nodes ** ( Default 3 )
+* Mesos Master
+* Zookeeper
+* Consul Server
+* Consul UI
+* Marathon 
+* Chronos
+
+** Worker Nodes ** (Default 2)
+* Mesos Slave
+* Consul agent (client)
+* Docker engine 
+
+## TO DO ##
+1. Add ngnix or haproxy for load balancing 
+2. Add consul template to update load balancers
+3. Add ELK stack for docker aggregation logs 
+4. Add security to harden the system 
+
+
+ 
+
+
 
 
 
