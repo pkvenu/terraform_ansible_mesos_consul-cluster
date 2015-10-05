@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf7cc7c1-2e98-4649-9fb5-9f0c94566bda" name="Default" comment="" />
+    <list default="true" id="cf7cc7c1-2e98-4649-9fb5-9f0c94566bda" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aws.tf" afterPath="$PROJECT_DIR$/aws.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hosts" afterPath="$PROJECT_DIR$/hosts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/variables.tf" afterPath="$PROJECT_DIR$/variables.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
     <ignored path="mi.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,97 +33,17 @@
             <entry file="file://$PROJECT_DIR$/hosts">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+                  <caret line="8" column="49" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="49" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="init.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/init.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/roles/mesos/tasks/main.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/roles/docker/defaults/main.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="3" column="115" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="115" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/roles/docker/tasks/main.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/roles/consul/tasks/main.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/roles/common/tasks/main.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="consul.j2" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/roles/consul/templates/consul.j2">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
+          <file leaf-file-name="variables.tf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/variables.tf">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="terraform.tfvars" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/terraform.tfvars">
-              <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0846395">
-                  <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+                  <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -131,8 +56,8 @@
           <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/variables.tf">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+                <state vertical-scroll-proportion="-2.6666667">
+                  <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -148,12 +73,84 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
+              <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+                <state />
+              </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.9744361">
+                <state vertical-scroll-proportion="17.470589">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+                <state />
+              </provider>
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="aws.tf" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/aws.tf">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.821192">
+                  <caret line="348" column="1" selection-start-line="348" selection-start-column="1" selection-end-line="348" selection-end-column="1" />
+                  <folding>
+                    <element signature="n#!!block;n#resource aws_security_group control#0" expanded="false" />
+                    <element signature="n#!!block;n#resource aws_security_group worker#0" expanded="false" />
+                    <element signature="n#!!block;n#resource aws_security_group consul#0" expanded="false" />
+                    <marker date="1444021021544" expanded="true" signature="44:59" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="112:128" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="179:197" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="215:230" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="255:279" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="302:318" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="379:397" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="420:436" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="492:510" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="570:601" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="629:645" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="718:736" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="758:784" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="840:857" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="882:906" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="927:946" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="959:979" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1010:1042" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1046:1087" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1091:1122" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1139:1172" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1224:1245" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1275:1294" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1312:1326" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1422:1454" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1430:1453" placeholder="(...)" />
+                    <marker date="1444021021544" expanded="true" signature="1471:1490" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1523:1540" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1598:1615" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1640:1664" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1685:1703" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1716:1735" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1766:1797" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1801:1842" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1846:1877" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1894:1927" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="1979:2000" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="2030:2049" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="2067:2081" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="2176:2208" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="2184:2207" placeholder="(...)" />
+                    <marker date="1444021021544" expanded="true" signature="2225:2244" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="2276:2293" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="2431:2449" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="3159:3177" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="3875:3893" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="6446:6465" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="6483:6503" placeholder="${...}" />
+                    <marker date="1444021021544" expanded="true" signature="6489:6502" placeholder="(...)" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -168,6 +165,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -211,7 +211,6 @@
         <option value="$PROJECT_DIR$/roles/mesos/templates/zk.j2" />
         <option value="$PROJECT_DIR$/roles/mesos/templates/zk_marathon.j2" />
         <option value="$PROJECT_DIR$/roles/mesos/templates/zoo.cfg.j2" />
-        <option value="$PROJECT_DIR$/aws.tf" />
         <option value="$PROJECT_DIR$/roles/mesos/defaults/main.yml" />
         <option value="$PROJECT_DIR$/tf-to-inventory.py" />
         <option value="$PROJECT_DIR$/roles/consul/templates/consul.j2" />
@@ -219,9 +218,10 @@
         <option value="$PROJECT_DIR$/init.yml" />
         <option value="$PROJECT_DIR$/roles/mesos/tasks/main.yml" />
         <option value="$PROJECT_DIR$/roles/docker/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/aws.tf" />
         <option value="$PROJECT_DIR$/terraform.tfvars" />
         <option value="$PROJECT_DIR$/variables.tf" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -240,7 +240,7 @@
     <option name="width" value="1922" />
     <option name="height" value="1081" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -264,7 +264,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,6 +285,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -646,12 +646,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586355" sideWeight="0.4893048" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586355" sideWeight="0.4893048" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -667,9 +667,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -960,89 +960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aws.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.666667">
-          <caret line="345" column="30" selection-start-line="345" selection-start-column="30" selection-end-line="345" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/roles/consul/templates/consul.j2">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/common/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/mesos/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/consul/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/docker/defaults/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="115" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/init.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/docker/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terraform.tfvars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0846395">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1056,9 +977,151 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9744361">
+        <state vertical-scroll-proportion="17.470589">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/common/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/consul/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/docker/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5768025">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/docker/defaults/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0846395">
+          <caret line="3" column="115" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/mesos/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56426334">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aws.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.821192">
+          <caret line="348" column="1" selection-start-line="348" selection-start-column="1" selection-end-line="348" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#resource aws_security_group control#0" expanded="false" />
+            <element signature="n#!!block;n#resource aws_security_group worker#0" expanded="false" />
+            <element signature="n#!!block;n#resource aws_security_group consul#0" expanded="false" />
+            <marker date="1444021021544" expanded="true" signature="44:59" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="112:128" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="179:197" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="215:230" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="255:279" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="302:318" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="379:397" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="420:436" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="492:510" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="570:601" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="629:645" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="718:736" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="758:784" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="840:857" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="882:906" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="927:946" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="959:979" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1010:1042" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1046:1087" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1091:1122" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1139:1172" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1224:1245" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1275:1294" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1312:1326" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1422:1454" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1430:1453" placeholder="(...)" />
+            <marker date="1444021021544" expanded="true" signature="1471:1490" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1523:1540" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1598:1615" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1640:1664" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1685:1703" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1716:1735" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1766:1797" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1801:1842" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1846:1877" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1894:1927" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="1979:2000" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="2030:2049" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="2067:2081" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="2176:2208" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="2184:2207" placeholder="(...)" />
+            <marker date="1444021021544" expanded="true" signature="2225:2244" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="2276:2293" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="2431:2449" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="3159:3177" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="3875:3893" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="6446:6465" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="6483:6503" placeholder="${...}" />
+            <marker date="1444021021544" expanded="true" signature="6489:6502" placeholder="(...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform.tfvars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028213166">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0846395">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,8 @@
 variable "access_key" {}
 variable "secret_key" {}
-variable "key_path" {}
-variable "key_name" {}
+#variable "key_path" {}
+variable "ssh_key_name" {}
+variable "ssh_key" {}
 variable "region" { default = "us-west-1" }
 variable "availability_zone" { default = "us-west-1a" }
 variable "vpc_cidr" { default = "10.128.0.0/16" }

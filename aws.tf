@@ -48,7 +48,7 @@ resource "aws_instance" "control_nodes" {
 
   connection {
     user = "${var.ssh_username}"
-    key_file = "${var.key_path}"
+    key_file = "${var.ssh_key}"
   }
 
   root_block_device {
@@ -74,7 +74,7 @@ resource "aws_instance" "worker_nodes" {
 
   connection {
     user = "${var.ssh_username}"
-    key_file = "${var.key_path}"
+    key_file = "${var.ssh_key}"
   }
 
   root_block_device {
@@ -344,6 +344,6 @@ resource "aws_security_group" "consul" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name = "deployer-key"
-  public_key = "${file(\"ssh/insecure-deployer.pub\")}"
+  key_name = "${var.ssh_key_name}"
+  public_key = "${file(var.ssh_key)}"
 }
