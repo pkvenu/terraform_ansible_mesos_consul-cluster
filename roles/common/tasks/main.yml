@@ -1,0 +1,33 @@
+---
+- name: "Get ec2 facts"
+  action: ec2_facts
+
+-
+  name: "add mesosphere repository"
+  sudo: true
+  yum:
+    name: "http://repos.mesosphere.io/el/7/noarch/RPMS/mesosphere-el-repo-7-1.noarch.rpm"
+    state: present
+
+-
+  name: "Downloading and enable the EPEL repo definition"
+  sudo: true
+  yum:
+    name: epel-release
+    state: latest
+
+- name: "upgrade all packages"
+  yum: name=* state=latest
+
+- name: "Install system packages"
+  yum: name={{ item }}
+  with_items:
+    - unzip
+    - curl
+    - git
+    - wget
+    - libselinux-python
+    - python-setuptools
+    - mesos
+
+

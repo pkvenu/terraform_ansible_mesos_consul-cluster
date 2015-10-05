@@ -1,0 +1,1 @@
+zk://{{ groups.control_nodes | join(':' + zookeeper_client_port + ',') }}:{{ zookeeper_client_port }}/marathon

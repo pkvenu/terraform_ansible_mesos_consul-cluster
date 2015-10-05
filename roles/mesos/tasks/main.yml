@@ -1,0 +1,142 @@
+---
+-
+  name: "install Zookeeper and Marathon package"
+  sudo: true
+  yum:
+    name: "{{ item }}"
+    state: present
+  when: mesos_install_mode == "master"
+  with_items:
+      - marathon
+      - mesosphere-zookeeper
+      - chronos
+
+-
+  name: "Write myid file."
+  template: src=zoo_id.j2 dest=/var/lib/zookeeper/myid
+  when: mesos_install_mode == "master"
+-
+  name: "Configure zookeeper"
+  tags: deploy
+  template: src=zoo.cfg.j2 dest=/etc/zookeeper/conf/zoo.cfg
+  when: mesos_install_mode == "master"
+
+-
+  name: "Write masters ip address in each master machines."
+  tags: deploy
+  template: src=zk.j2 dest=/etc/mesos/zk
+  when: mesos_install_mode == "master" or mesos_install_mode == "slave"
+-
+  name: "Set Quorum based on master count"
+  tags: deploy
+  template: src=quorum.j2 dest=/etc/mesos-master/quorum
+  when: mesos_install_mode == "master"
+
+-
+  name: "Add ip to mesos-master"
+  tags: deploy
+  template: src=hostname.j2 dest=/etc/mesos-master/ip
+  when: mesos_install_mode == "master"
+
+-
+  name: "Add host name to mesos-master"
+  tags: deploy
+  template: src=hostname.j2 dest=/etc/mesos-master/hostname
+  when: mesos_install_mode == "master"
+
+- name: "Create Marathon folder"
+  shell: sudo mkdir -p /etc/marathon/conf
+  when: mesos_install_mode == "master"
+
+- name: "Copy host to marathon conf"
+  shell: sudo cp /etc/mesos-master/hostname /etc/marathon/conf
+  when: mesos_install_mode == "master"
+
+- name: "Copy zk to marathon master file"
+  shell: sudo cp /etc/mesos/zk /etc/marathon/conf/master
+  when: mesos_install_mode == "master"
+
+-
+  name: "Write masters ip address in each marathon machines."
+  tags: deploy
+  template: src=zk_marathon.j2 dest=/etc/marathon/conf/zk
+  when: mesos_install_mode == "master"
+
+- name: Set Mesos Master Cluster name
+  copy:
+    content: "{{mesos_cluster_name}}"
+    dest: /etc/mesos-master/cluster
+    mode: 0644
+  sudo: yes
+  when: mesos_install_mode == "master"
+
+-
+  name: "Stop Mesos Slave"
+  service: name=mesos-slave state=stopped enabled=no
+  when: mesos_install_mode == "master"
+
+-
+  name: "Start Zookeeper"
+  service: name=zookeeper state=restarted enabled=yes
+  when: mesos_install_mode == "master"
+
+-
+  name: "Restart Mesos-Master"
+  service: name=mesos-master state=restarted enabled=yes
+  when: mesos_install_mode == "master"
+
+-
+  name: "Restart Marathon"
+  service: name=marathon state=restarted
+  when: mesos_install_mode == "master"
+
+- name: "start chronos"
+  service: name=chronos state=started enabled=yes
+  when: mesos_install_mode == "master"
+
+
+#----------SLAVE CONFIGURATION------------
+
+-
+  name: "Add ip to mesos-slave"
+  tags: deploy
+  template: src=hostname.j2 dest=/etc/mesos-slave/ip
+  when: mesos_install_mode == "slave"
+
+-
+  name: "Add host name to mesos-slave"
+  tags: deploy
+  template: src=hostname.j2 dest=/etc/mesos-slave/hostname
+  when: mesos_install_mode == "slave"
+
+
+- name: "configure containerizers"
+  shell: echo 'docker,mesos' | sudo tee /etc/mesos-slave/containerizers
+  when: mesos_install_mode == "slave"
+
+- name: "Change Executor timeout"
+  shell: echo '5mins' | sudo tee /etc/mesos-slave/executor_registration_timeout
+  when: mesos_install_mode == "slave"
+
+- name: "stop the mesos slave but make it start"
+  service: name=mesos-slave state=stopped enabled=yes
+  when: mesos_install_mode == "slave"
+
+- name: "disabled the mesos master by default"
+  service: name=mesos-master state=stopped enabled=no
+  when: mesos_install_mode == "slave"
+
+- name: "Restart Mesos-slave"
+  service: name=mesos-slave state=restarted enabled=yes
+  when: mesos_install_mode == "slave"
+
+
+
+
+
+
+
+
+
+
+

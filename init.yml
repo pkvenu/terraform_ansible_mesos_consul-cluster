@@ -1,0 +1,21 @@
+---
+-
+ hosts: all
+ sudo: true
+ roles:
+    - { role: common }
+
+-
+  hosts: control_nodes
+  sudo: true
+  roles:
+    - { role: mesos , mesos_install_mode: master , tags: ['mesos-master'] }
+    - { role: consul , consul_is_server: true, tags: ['consul-server'] }
+
+-
+  hosts: worker_nodes
+  sudo: true
+  roles:
+    - { role: mesos , mesos_install_mode: slave, tags: ['mesos-slave']   }
+    - { role: consul , consul_is_server: false, tags: ['consul-client']  }
+    - { role: docker , consul_is_server: false, tags: ['docker'] }

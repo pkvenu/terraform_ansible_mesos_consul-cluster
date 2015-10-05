@@ -1,0 +1,17 @@
+{
+    "server": {{ "true" if consul_is_server else "false" }},
+    {% if consul_is_server %}
+       "bootstrap_expect": 3,
+    {% endif %}
+    "retry_join": [ {{ consul_retry_join }} ],
+    "rejoin_after_leave": true,
+    "node_name": "{{ansible_fqdn}}",
+    "enable_syslog": true,
+    "data_dir": "{{ consul_data_dir }}",
+    {% if consul_is_server %}
+      "ui_dir" : "{{ consul_ui_dir }}/dist",
+    {% endif %}
+    "datacenter": "{{ansible_ec2_placement_region}}",
+    "recursor": "8.8.8.8",
+    "domain": "consul."
+ }

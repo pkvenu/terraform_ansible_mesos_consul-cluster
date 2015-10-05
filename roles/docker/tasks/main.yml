@@ -1,0 +1,43 @@
+---
+
+- name: "Get ec2 facts"
+  action: ec2_facts
+
+- name: "Install Docker Repository"
+  template: src=docker-repo.j2 dest=/etc/yum.repos.d/docker.repo
+  when: not consul_is_server
+
+- name: "install docker engine"
+  yum: name=docker-engine state=present
+  when: not consul_is_server
+
+- name: "Install docker service systemd config"
+  template: src=docker-systemd.j2 dest=/etc/systemd/system/docker.service
+  when: not consul_is_server
+
+- name: "Install dependencies"
+  yum: name={{ item }}
+  with_items:
+      - golang
+      - device-mapper-event-libs
+  when: not consul_is_server
+
+- name: "enable docker"
+  command: sudo systemctl enable docker.service
+  when: not consul_is_server
+
+- name: "restart daemon-reload"
+  command: sudo systemctl daemon-reload
+  when: not consul_is_server
+
+- name: "restart docker"
+  command: sudo systemctl start docker.service
+  when: not consul_is_server
+
+- name: "Run Docker Container Registrator"
+  command: sudo docker run -d -v /var/run/docker.sock:/tmp/docker.sock --net=host --name=registrator gliderlabs/registrator:latest consul://localhost:8500
+  when: not consul_is_server
+
+#- name: "Run Hello World Docker Image"
+#  command: sudo docker run -d -p 80 tutum/hello-world
+#  when: not consul_is_server

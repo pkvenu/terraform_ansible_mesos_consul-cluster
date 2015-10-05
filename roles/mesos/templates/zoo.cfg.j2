@@ -1,0 +1,9 @@
+tickTime=2000
+dataDir=/var/lib/zookeeper/
+dataLogDir=/var/lib/zookeeper/
+clientPort={{ zookeeper_client_port }}
+initLimit=5
+syncLimit=2
+{% for host in groups['control_nodes'] %}
+server.{{ hostvars[host].zoo_id }}={{ host }}:{{ zookeeper_leader_port }}:{{ zookeeper_election_port }}
+{% endfor %}

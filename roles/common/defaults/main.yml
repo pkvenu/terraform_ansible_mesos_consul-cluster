@@ -1,0 +1,3 @@
+---
+mesos_version : "0.23.0"
+mesos_package : "mesos-{{ mesos_version }}"
