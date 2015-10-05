@@ -1,10 +1,3 @@
-ec2-54-219-136-249.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-136-249.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-219-136-234.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-136-234.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-219-136-225.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-136-225.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-219-136-219.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-136-219.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-219-137-12.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-137-12.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-215-239-156.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-215-239-156.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-
 [control_nodes]
 ec2-54-219-136-234.us-west-1.compute.amazonaws.com zoo_id=1
 ec2-54-219-137-12.us-west-1.compute.amazonaws.com zoo_id=3
