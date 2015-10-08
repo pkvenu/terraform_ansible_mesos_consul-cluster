@@ -9,8 +9,8 @@ To Launch this cluster:
 ```
 access_key = ""
 secret_key = ""
-key_path = ""
-key_name = ""
+ssh_key_name = ""
+ssh_key = ""
 ```
 
 2. call `terraform apply` to launch the cluster .   
@@ -44,7 +44,7 @@ You can now check the status of the container from the consul UI.
 * Marathon 
 * Chronos
 
-** Worker Nodes ** (Default 2)
+** Worker Nodes ** (Default 3)
 * Mesos Slave
 * Consul agent (client)
 * Docker engine 
