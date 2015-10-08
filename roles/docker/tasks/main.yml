@@ -29,16 +29,15 @@
       - python-pip
   when: not consul_is_server
 
-- name: Install docker-py
+- name: "Install docker-py"
   pip: name=docker-py version=1.4.0
 
 - name: "enable docker"
-  command: sudo chkconfig docker on
+  service: name=docker enabled=yes
   when: not consul_is_server
 
-
 - name: "start docker"
-  command: sudo service docker start
+  service: name=docker state=started
   when: not consul_is_server
 
 - name: "run registrator container"
