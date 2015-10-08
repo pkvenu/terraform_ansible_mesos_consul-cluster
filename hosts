@@ -1,16 +1,16 @@
-ec2-54-215-128-248.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-215-128-248.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-215-131-25.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-215-131-25.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-193-127-173.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-193-127-173.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-215-129-152.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-215-129-152.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-215-132-154.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-215-132-154.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
-ec2-54-193-127-214.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-193-127-214.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
+ec2-54-215-137-207.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-215-137-207.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
+ec2-54-219-167-177.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-167-177.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
+ec2-54-219-166-217.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-166-217.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
+ec2-54-219-167-176.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-167-176.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
+ec2-54-219-167-179.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-219-167-179.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
+ec2-54-193-73-245.us-west-1.compute.amazonaws.com ansible_ssh_host=ec2-54-193-73-245.us-west-1.compute.amazonaws.com ansible_ssh_user=centos
 
 [control_nodes]
-ec2-54-215-128-248.us-west-1.compute.amazonaws.com zoo_id=3
-ec2-54-215-131-25.us-west-1.compute.amazonaws.com zoo_id=2
-ec2-54-215-129-152.us-west-1.compute.amazonaws.com zoo_id=1
+ec2-54-219-167-176.us-west-1.compute.amazonaws.com zoo_id=2
+ec2-54-215-137-207.us-west-1.compute.amazonaws.com zoo_id=3
+ec2-54-219-167-177.us-west-1.compute.amazonaws.com zoo_id=1
 
 [worker_nodes]
-ec2-54-215-132-154.us-west-1.compute.amazonaws.com
-ec2-54-193-127-173.us-west-1.compute.amazonaws.com
-ec2-54-193-127-214.us-west-1.compute.amazonaws.com
+ec2-54-193-73-245.us-west-1.compute.amazonaws.com
+ec2-54-219-166-217.us-west-1.compute.amazonaws.com
+ec2-54-219-167-179.us-west-1.compute.amazonaws.com

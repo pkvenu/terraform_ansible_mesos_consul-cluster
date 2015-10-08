@@ -1,9 +1,10 @@
 ---
+
 -
  hosts: all
  sudo: true
  roles:
-    - { role: common }
+    - { role: common, tags: ['common'] }
 
 -
   hosts: control_nodes

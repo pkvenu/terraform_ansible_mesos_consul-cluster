@@ -56,7 +56,5 @@ terraform.tfvars
 ssh/*
 .idea/*
 
-# intellj #
-######################
-mi.iml
+
 

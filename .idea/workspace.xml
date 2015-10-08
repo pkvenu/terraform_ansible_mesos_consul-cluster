@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf7cc7c1-2e98-4649-9fb5-9f0c94566bda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aws.tf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/docker/templates/docker-socket.j2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roles/docker/templates/docker-systemd.j2" afterPath="$PROJECT_DIR$/roles/docker/templates/docker-systemd.j2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hosts" afterPath="$PROJECT_DIR$/hosts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init.yml" afterPath="$PROJECT_DIR$/init.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/roles/docker/tasks/main.yml" afterPath="$PROJECT_DIR$/roles/docker/tasks/main.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mi.iws" />
@@ -15,7 +21,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="true" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -24,155 +30,28 @@
     <favorites_list name="mi" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="hosts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/hosts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/variables.tf">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.0">
-                  <caret line="3" column="22" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="aws.tf" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/aws.tf">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.45141065">
-                  <caret line="348" column="1" selection-start-line="348" selection-start-column="1" selection-end-line="348" selection-end-column="1" />
-                  <folding>
-                    <element signature="n#!!block;n#resource aws_vpc main#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_subnet main#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_internet_gateway main#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_route_table main#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_main_route_table_association main#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_instance control_nodes#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_instance worker_nodes#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_security_group control#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_security_group worker#0" expanded="false" />
-                    <element signature="n#!!block;n#resource aws_security_group consul#0" expanded="false" />
-                    <marker date="1444021835509" expanded="true" signature="44:59" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="112:128" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="179:197" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="215:230" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="255:279" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="302:318" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="379:397" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="420:436" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="492:510" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="570:601" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="629:645" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="718:736" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="758:784" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="840:857" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="882:906" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="927:946" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="959:979" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1010:1042" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1046:1087" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1091:1122" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1139:1172" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1224:1245" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1275:1294" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1312:1326" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1422:1454" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1430:1453" placeholder="(...)" />
-                    <marker date="1444021835509" expanded="true" signature="1471:1490" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1523:1540" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1598:1615" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1640:1664" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1685:1703" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1716:1735" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1766:1797" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1801:1842" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1846:1877" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1894:1927" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="1979:2000" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="2030:2049" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="2067:2081" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="2176:2208" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="2184:2207" placeholder="(...)" />
-                    <marker date="1444021835509" expanded="true" signature="2225:2244" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="2276:2293" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="2431:2449" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="3159:3177" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="3875:3893" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="6446:6465" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="6483:6503" placeholder="${...}" />
-                    <marker date="1444021835509" expanded="true" signature="6489:6502" placeholder="(...)" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="terraform.tfvars" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/terraform.tfvars">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.0">
-                  <caret line="3" column="7" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/variables.tf">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.6666667">
-                  <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-                <state />
-              </provider>
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.9413629">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-              <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-                <state />
-              </provider>
-              <provider editor-type-id="MarkdownPreviewEditor">
-                <state />
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="docker-repo.j2" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/roles/docker/templates/docker-repo.j2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/roles/docker/tasks/main.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6896552">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -210,13 +89,10 @@
         <option value="$PROJECT_DIR$/roles/registrator/templates/registrator-systemd.j2" />
         <option value="$PROJECT_DIR$/roles/registrator/defaults/main.yml" />
         <option value="$PROJECT_DIR$/roles/consul/templates/docker-systemd.j2" />
-        <option value="$PROJECT_DIR$/terraform.tfstate" />
         <option value="$PROJECT_DIR$/roles/consul/templates/resolv.conf-client.j2" />
-        <option value="$PROJECT_DIR$/hosts" />
         <option value="$PROJECT_DIR$/roles/consul/templates/docker-repo.j2" />
         <option value="$PROJECT_DIR$/roles/consul/defaults/main.yml" />
         <option value="$PROJECT_DIR$/roles/docker/defaults/main.yml" />
-        <option value="$PROJECT_DIR$/roles/docker/templates/docker-systemd.j2" />
         <option value="$PROJECT_DIR$/roles/common/defaults/main.yml" />
         <option value="$PROJECT_DIR$/roles/common/tasks/main.yml" />
         <option value="$PROJECT_DIR$/roles/mesos/vars/main.yml" />
@@ -230,13 +106,17 @@
         <option value="$PROJECT_DIR$/tf-to-inventory.py" />
         <option value="$PROJECT_DIR$/roles/consul/templates/consul.j2" />
         <option value="$PROJECT_DIR$/roles/consul/tasks/main.yml" />
-        <option value="$PROJECT_DIR$/init.yml" />
         <option value="$PROJECT_DIR$/roles/mesos/tasks/main.yml" />
-        <option value="$PROJECT_DIR$/roles/docker/tasks/main.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/terraform.tfvars" />
         <option value="$PROJECT_DIR$/variables.tf" />
         <option value="$PROJECT_DIR$/aws.tf" />
+        <option value="$PROJECT_DIR$/terraform.tfstate" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/init.yml" />
+        <option value="$PROJECT_DIR$/roles/docker/templates/docker-socket.j2" />
+        <option value="$PROJECT_DIR$/roles/docker/templates/docker-systemd.j2" />
+        <option value="$PROJECT_DIR$/hosts" />
+        <option value="$PROJECT_DIR$/terraform.tfvars" />
+        <option value="$PROJECT_DIR$/roles/docker/tasks/main.yml" />
       </list>
     </option>
   </component>
@@ -251,9 +131,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1365" />
-    <option name="width" value="1922" />
-    <option name="height" value="1081" />
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1368" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -278,7 +159,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,16 +177,140 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mi.iml" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistoryKey" value="mi_&#9;null&#9;null&#10;mi&#9;null&#9;null&#10;mi_control_nodes&#9;null&#9;null" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -673,31 +677,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
+    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586355" sideWeight="0.4893048" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31886476" sideWeight="0.47720364" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14331551" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3763326" sideWeight="0.51069516" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2530395" sideWeight="0.49095607" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14285715" sideWeight="0.50904393" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3539232" sideWeight="0.52279633" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.49392098" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -734,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,20 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.055813953">
           <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/docker/templates/docker-systemd.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21428572">
-          <caret line="8" column="81" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/docker/templates/docker-repo.j2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -978,23 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/common/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,15 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roles/docker/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5768025">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,7 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0846395">
           <caret line="3" column="115" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,56 +983,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/init.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56426334">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9413629">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hosts">
+    <entry file="file://$PROJECT_DIR$/aws.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terraform.tfvars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="-2.1111112">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1083,77 +1013,172 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09342561">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/common/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9653979">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/docker/templates/docker-systemd.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.328">
+          <caret line="8" column="85" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aws.tf">
+    <entry file="file://$PROJECT_DIR$/roles/docker/templates/docker-socket.j2">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45141065">
-          <caret line="348" column="1" selection-start-line="348" selection-start-column="1" selection-end-line="348" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#resource aws_vpc main#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_subnet main#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_internet_gateway main#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_route_table main#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_main_route_table_association main#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_instance control_nodes#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_instance worker_nodes#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_security_group control#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_security_group worker#0" expanded="false" />
-            <element signature="n#!!block;n#resource aws_security_group consul#0" expanded="false" />
-            <marker date="1444021835509" expanded="true" signature="44:59" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="112:128" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="179:197" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="215:230" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="255:279" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="302:318" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="379:397" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="420:436" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="492:510" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="570:601" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="629:645" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="718:736" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="758:784" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="840:857" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="882:906" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="927:946" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="959:979" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1010:1042" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1046:1087" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1091:1122" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1139:1172" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1224:1245" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1275:1294" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1312:1326" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1422:1454" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1430:1453" placeholder="(...)" />
-            <marker date="1444021835509" expanded="true" signature="1471:1490" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1523:1540" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1598:1615" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1640:1664" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1685:1703" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1716:1735" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1766:1797" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1801:1842" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1846:1877" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1894:1927" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="1979:2000" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="2030:2049" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="2067:2081" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="2176:2208" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="2184:2207" placeholder="(...)" />
-            <marker date="1444021835509" expanded="true" signature="2225:2244" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="2276:2293" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="2431:2449" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="3159:3177" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="3875:3893" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="6446:6465" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="6483:6503" placeholder="${...}" />
-            <marker date="1444021835509" expanded="true" signature="6489:6502" placeholder="(...)" />
-          </folding>
+        <state vertical-scroll-proportion="0.528">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/roles/docker/templates/docker-repo.j2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3626667">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.432">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform.tfvars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20689656">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/docker/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6896552">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mi</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
