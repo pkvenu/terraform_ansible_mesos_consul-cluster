@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf7cc7c1-2e98-4649-9fb5-9f0c94566bda" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hosts" afterPath="$PROJECT_DIR$/hosts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.browser.support.portal.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.dynamic.ca.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.dynamic.relay.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.dynamic.server.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.dynamic.session.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.global.auth.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.global.ca.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.global.dbutil.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.global.relay.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.global.server.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.global.session.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.local.relay.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.local.server.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.local.session.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.reports.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/com.icontrol.server.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/customizable.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/templates/customizable_fr.j2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/defaults/main.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/roles/icontrol/tasks/main.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aws.tf" afterPath="$PROJECT_DIR$/aws.tf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/variables.tf" afterPath="$PROJECT_DIR$/variables.tf" />
     </list>
     <ignored path="mi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hosts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hosts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hosts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.062068965">
+            <state vertical-scroll-proportion="0.0">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
@@ -114,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="false">
+      <file leaf-file-name="variables.tf" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/variables.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4074073">
-              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.5209125">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -189,9 +210,9 @@
         <option value="$PROJECT_DIR$/roles/docker/tasks/main.yml" />
         <option value="$PROJECT_DIR$/ec2.py" />
         <option value="$PROJECT_DIR$/ec2.ini" />
-        <option value="$PROJECT_DIR$/variables.tf" />
         <option value="$PROJECT_DIR$/roles/common/tasks/main.yml" />
         <option value="$PROJECT_DIR$/hosts" />
+        <option value="$PROJECT_DIR$/variables.tf" />
       </list>
     </option>
   </component>
@@ -254,6 +275,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1027,18 +1062,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/variables.tf">
+    <entry file="file://$PROJECT_DIR$/hosts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4074073">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hosts">
+    <entry file="file://$PROJECT_DIR$/variables.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.062068965">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5209125">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>

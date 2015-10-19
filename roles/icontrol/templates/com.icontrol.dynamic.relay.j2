@@ -1,0 +1,19 @@
+###############################################################################
+# This is the dynamic data-center (or server-cluster-specific) file
+# which is used to configure the server back end.
+# The server will poll for changes to this file every 10 seconds
+###############################################################################
+
+###############################################################################
+# Relay server properties
+###############################################################################
+
+com.icontrol.relay.server.status.relaysvrauthname="{{relay_server_status_relay_svrauth_name}}"
+com.icontrol.relay.server.status.relaysvrauthpass="{{relay_server_status_relay_svrauth_pass}}"
+
+# cert store for stream ssl server
+# com.icontrol.relay.server.svrcertfile=/data/ic/certs/relaystaricontrol.keystore
+# default is com.icontrol.relay.server.svrcertfile=resources/relay2.keystore
+com.icontrol.relay.server.svrcertfile="{{relay_server_svrcert_file}}"
+# default is chrispass
+com.icontrol.relay.server.svrcertfilepass="{{relay_server_svrcert_file_pass}}"

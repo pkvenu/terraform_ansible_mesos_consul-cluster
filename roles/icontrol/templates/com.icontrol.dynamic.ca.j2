@@ -1,0 +1,22 @@
+###############################################################################
+# This is the global data-center (or server-cluster-specific) file
+# which is used to configure the server back end.
+###############################################################################
+
+
+gatewaySerialPrefix = "{{gateway_Serial_Prefix}}"
+
+###############################################################################
+# Keymanager server URL & client name
+# Client must have an RSA private key named keyclient.<clientKeyName>.priv
+# installed in its /etc/keys directory, and the key server must have the
+# corresponding public key, keyclient.<clientKeyName>.pub installed in
+# its own /etc/keys directory.
+# Generate the private key (2048-bit key):
+#     openssl genrsa 2048 > keyclient.<keyname>.priv
+# Extract the public key:
+#     openssl rsa -pubout <keyclient.<keyname>.priv >keyclient.<keyname>.pub
+###############################################################################
+keyGlobalCode = "{{key_Global_Code}}"
+keyGlobalCode.ngHub = "{{key_Global_Code_ngHub}}"
+keyGlobalCode.tssc = "{{key_Global_Code_tssc}}"
