@@ -1,0 +1,733 @@
+---
+
+############## COM.ICONTROL.SERVER #####################
+base_Path : /data/ic
+devType_Home : data/server/devicedefs
+fw_Home : data/gateway/images
+datamanager_cameraImagePath : pictures
+gatewaymanager_gatewayLogPath : logs/gateway
+gatewaymanager_gatewayFilesPath : logs/gateway
+gatewaymanager_gatewayBackupPath : data/gateway/backup
+maintenance_servers : conf/com.icontrol.maintenance.servers
+maintenance_devicelist : conf/com.icontrol.maintenance.devicelist
+util_logDir : logs/server
+gatewaymanager_gatewayLogSize: 1000000
+gatewaymanager_gatewayLogCount: 40
+# com.icontrol.reader.test1 : conf/test/testinput.txt.
+browser_names: conf/com.icontrol.browser.names
+browser_os: conf/com.icontrol.browser.os
+browser_support: conf/com.icontrol.browser.support
+browser_category_mobile: conf/com.icontrol.browser.category.mobile
+preference_config_xml: conf/com.icontrol.preference.config.xml
+cache_provider: com.icontrol.cache.ehcache.EhcacheProvider
+admin_reportPath: reports/admin
+admin_reportOutputPath: reports/output
+pps_Profiles: conf/com.icontrol.ppsProfiles.xml
+install_types: conf/com.icontrol.installtypes.xml
+smpp_config_file: /no/file
+smpp_configbackup_file: /no/file
+ffmpeg_Wait: 30000
+appVersion_CheckInterval: 15
+appVersion_BrowserCheckInterval: 7
+appVersion_CheckURI: file://localhost/data/ic/conf/globalPreferences.xml
+############## END COM.ICONTROL.SERVER #####################
+
+############## COM.ICONTROL.REPORTS #####################
+
+report_nightly_ave_daily_usage_per_site_name: ave_daily_usage_per_site
+report_nightly_ave_daily_usage_per_site_format: pdf
+report_nightly_ave_daily_usage_per_site_partner: icontrol
+report_nightly_ave_daily_usage_per_site_cluster: icontrol1
+report_nightly_ave_daily_usage_per_site_schema: network
+report_nightly_ave_daily_usage_per_site_START_DATE: 30 days ago
+report_nightly_ave_daily_usage_per_site_END_DATE: today
+report_nightly_ave_daily_usage_per_site_OTHER_PARAM: 5
+report_nightly_ave_daily_usage_per_site_SELECT_ALL: 1
+report_nightly_ave_daily_usage_per_site_EXCLUDE: 1
+report_nightly_ave_daily_usage_per_site_EXCLUDE_GROUPID: 110021
+report_nightly_ave_daily_usage_per_site_suffix: _all
+
+report_nightly_ave_daily_usage_per_site_ex_name: ave_daily_usage_per_site
+report_nightly_ave_daily_usage_per_site_ex_format: pdf
+report_nightly_ave_daily_usage_per_site_ex_partner: icontrol
+report_nightly_ave_daily_usage_per_site_ex_cluster: icontrol1
+report_nightly_ave_daily_usage_per_site_ex_schema: network
+report_nightly_ave_daily_usage_per_site_ex_START_DATE: 30 days ago
+report_nightly_ave_daily_usage_per_site_ex_END_DATE: today
+report_nightly_ave_daily_usage_per_site_ex_OTHER_PARAM: 5
+report_nightly_ave_daily_usage_per_site_ex_SELECT_ALL: 0
+report_nightly_ave_daily_usage_per_site_ex_EXCLUDE: 1
+report_nightly_ave_daily_usage_per_site_ex_EXCLUDE_GROUPID: 110021
+report_nightly_ave_daily_usage_per_site_ex_suffix: _ex_110021
+
+report_nightly_ave_daily_usage_per_site_inc_name: ave_daily_usage_per_site
+report_nightly_ave_daily_usage_per_site_inc_format: pdf
+report_nightly_ave_daily_usage_per_site_inc_partner: icontrol
+report_nightly_ave_daily_usage_per_site_inc_cluster: icontrol1
+report_nightly_ave_daily_usage_per_site_inc_schema: network
+report_nightly_ave_daily_usage_per_site_inc_START_DATE: 30 days ago
+report_nightly_ave_daily_usage_per_site_inc_END_DATE: today
+report_nightly_ave_daily_usage_per_site_inc_OTHER_PARAM: 5
+report_nightly_ave_daily_usage_per_site_inc_SELECT_ALL: 0
+report_nightly_ave_daily_usage_per_site_inc_EXCLUDE: 0
+report_nightly_ave_daily_usage_per_site_inc_EXCLUDE_GROUPID: 110021
+report_nightly_ave_daily_usage_per_site_inc_suffix: _inc_110021
+
+report_nightly_ave_daily_usage_per_site_csv_name: ave_daily_usage_per_site
+report_nightly_ave_daily_usage_per_site_csv_format: csv
+report_nightly_ave_daily_usage_per_site_csv_partner: icontrol
+report_nightly_ave_daily_usage_per_site_csv_cluster: icontrol1
+report_nightly_ave_daily_usage_per_site_csv_schema: network
+report_nightly_ave_daily_usage_per_site_csv_START_DATE: 30 days ago
+report_nightly_ave_daily_usage_per_site_csv_END_DATE: today
+report_nightly_ave_daily_usage_per_site_csv_OTHER_PARAM: 5
+report_nightly_ave_daily_usage_per_site_csv_SELECT_ALL: 1
+report_nightly_ave_daily_usage_per_site_csv_EXCLUDE: 1
+report_nightly_ave_daily_usage_per_site_csv_EXCLUDE_GROUPID: 110021
+report_nightly_ave_daily_usage_per_site_csv_suffix: _all
+
+report_nightly_ave_daily_usage_per_site_csv_ex_name: ave_daily_usage_per_site
+report_nightly_ave_daily_usage_per_site_csv_ex_format: csv
+report_nightly_ave_daily_usage_per_site_csv_ex_partner: icontrol
+report_nightly_ave_daily_usage_per_site_csv_ex_cluster: icontrol1
+report_nightly_ave_daily_usage_per_site_csv_ex_schema: network
+report_nightly_ave_daily_usage_per_site_csv_ex_START_DATE: 30 days ago
+report_nightly_ave_daily_usage_per_site_csv_ex_END_DATE: today
+report_nightly_ave_daily_usage_per_site_csv_ex_OTHER_PARAM: 5
+report_nightly_ave_daily_usage_per_site_csv_ex_SELECT_ALL: 0
+report_nightly_ave_daily_usage_per_site_csv_ex_EXCLUDE: 1
+report_nightly_ave_daily_usage_per_site_csv_ex_EXCLUDE_GROUPID: 110021
+report_nightly_ave_daily_usage_per_site_csv_ex_suffix: _ex_110021
+
+report_nightly_ave_daily_usage_per_site_csv_inc_name: ave_daily_usage_per_site
+report_nightly_ave_daily_usage_per_site_csv_inc_format: csv
+report_nightly_ave_daily_usage_per_site_csv_inc_partner: icontrol
+report_nightly_ave_daily_usage_per_site_csv_inc_cluster: icontrol1
+report_nightly_ave_daily_usage_per_site_csv_inc_schema: network
+report_nightly_ave_daily_usage_per_site_csv_inc_START_DATE: 30 days ago
+report_nightly_ave_daily_usage_per_site_csv_inc_END_DATE: today
+report_nightly_ave_daily_usage_per_site_csv_inc_OTHER_PARAM: 5
+report_nightly_ave_daily_usage_per_site_csv_inc_SELECT_ALL: 0
+report_nightly_ave_daily_usage_per_site_csv_inc_EXCLUDE: 0
+report_nightly_ave_daily_usage_per_site_csv_inc_EXCLUDE_GROUPID: 110021
+report_nightly_ave_daily_usage_per_site_csv_inc_suffix: _inc_110021
+
+report_nightly_ave_sched_alrm_auto_name: ave_sched_alrm_auto
+report_nightly_ave_sched_alrm_auto_format: csv
+report_nightly_ave_sched_alrm_auto_partner: icontrol
+report_nightly_ave_sched_alrm_auto_cluster: icontrol1
+report_nightly_ave_sched_alrm_auto_schema: network
+report_nightly_ave_sched_alrm_auto_START_DATE: 30 days ago
+report_nightly_ave_sched_alrm_auto_END_DATE: today
+report_nightly_ave_sched_alrm_auto_OTHER_PARAM: 5
+report_nightly_ave_sched_alrm_auto_SELECT_ALL: 1
+report_nightly_ave_sched_alrm_auto_EXCLUDE_GROUPID: 110021
+report_nightly_ave_sched_alrm_auto_EXCLUDE: 1
+report_nightly_ave_sched_alrm_auto_suffix: _all
+
+report_nightly_ave_sched_alrm_auto_ex_name: ave_sched_alrm_auto
+report_nightly_ave_sched_alrm_auto_ex_format: csv
+report_nightly_ave_sched_alrm_auto_ex_partner: icontrol
+report_nightly_ave_sched_alrm_auto_ex_cluster: icontrol1
+report_nightly_ave_sched_alrm_auto_ex_schema: network
+report_nightly_ave_sched_alrm_auto_ex_START_DATE: 30 days ago
+report_nightly_ave_sched_alrm_auto_ex_END_DATE: today
+report_nightly_ave_sched_alrm_auto_ex_OTHER_PARAM: 5
+report_nightly_ave_sched_alrm_auto_ex_SELECT_ALL: 0
+report_nightly_ave_sched_alrm_auto_ex_EXCLUDE_GROUPID: 110021
+report_nightly_ave_sched_alrm_auto_ex_EXCLUDE: 1
+report_nightly_ave_sched_alrm_auto_ex_suffix: _ex_110021
+
+report_nightly_ave_sched_alrm_auto_inc_name: ave_sched_alrm_auto
+report_nightly_ave_sched_alrm_auto_inc_format: csv
+report_nightly_ave_sched_alrm_auto_inc_partner: icontrol
+report_nightly_ave_sched_alrm_auto_inc_cluster: icontrol1
+report_nightly_ave_sched_alrm_auto_inc_schema: network
+report_nightly_ave_sched_alrm_auto_inc_START_DATE: 30 days ago
+report_nightly_ave_sched_alrm_auto_inc_END_DATE: today
+report_nightly_ave_sched_alrm_auto_inc_OTHER_PARAM: 5
+report_nightly_ave_sched_alrm_auto_inc_SELECT_ALL: 0
+report_nightly_ave_sched_alrm_auto_inc_EXCLUDE_GROUPID: 110021
+report_nightly_ave_sched_alrm_auto_inc_EXCLUDE: 0
+report_nightly_ave_sched_alrm_auto_inc_suffix: _inc_110021
+
+report_nightly_ave_email_alerts_per_site_name: ave_email_alerts_per_site
+report_nightly_ave_email_alerts_per_site_format: csv
+report_nightly_ave_email_alerts_per_site_partner: icontrol
+report_nightly_ave_email_alerts_per_site_cluster: icontrol1
+report_nightly_ave_email_alerts_per_site_schema: network
+report_nightly_ave_email_alerts_per_site_START_DATE: 30 days ago
+report_nightly_ave_email_alerts_per_site_END_DATE: today
+report_nightly_ave_email_alerts_per_site_OTHER_PARAM: 5
+report_nightly_ave_email_alerts_per_site_SELECT_ALL: 1
+report_nightly_ave_email_alerts_per_site_EXCLUDE_GROUPID: 110021
+report_nightly_ave_email_alerts_per_site_EXCLUDE: 1
+report_nightly_ave_email_alerts_per_site_suffix: _all
+
+report_nightly_ave_email_alerts_per_site_ex_name: ave_email_alerts_per_site
+report_nightly_ave_email_alerts_per_site_ex_format: csv
+report_nightly_ave_email_alerts_per_site_ex_partner: icontrol
+report_nightly_ave_email_alerts_per_site_ex_cluster: icontrol1
+report_nightly_ave_email_alerts_per_site_ex_schema: network
+report_nightly_ave_email_alerts_per_site_ex_START_DATE: 30 days ago
+report_nightly_ave_email_alerts_per_site_ex_END_DATE: today
+report_nightly_ave_email_alerts_per_site_ex_OTHER_PARAM: 5
+report_nightly_ave_email_alerts_per_site_ex_SELECT_ALL: 0
+report_nightly_ave_email_alerts_per_site_ex_EXCLUDE_GROUPID: 110021
+report_nightly_ave_email_alerts_per_site_ex_EXCLUDE: 1
+report_nightly_ave_email_alerts_per_site_ex_suffix: _ex_110021
+
+report_nightly_ave_email_alerts_per_site_inc_name: ave_email_alerts_per_site
+report_nightly_ave_email_alerts_per_site_inc_format: csv
+report_nightly_ave_email_alerts_per_site_inc_partner: icontrol
+report_nightly_ave_email_alerts_per_site_inc_cluster: icontrol1
+report_nightly_ave_email_alerts_per_site_inc_schema: network
+report_nightly_ave_email_alerts_per_site_inc_START_DATE: 30 days ago
+report_nightly_ave_email_alerts_per_site_inc_END_DATE: today
+report_nightly_ave_email_alerts_per_site_inc_OTHER_PARAM: 5
+report_nightly_ave_email_alerts_per_site_inc_SELECT_ALL: 0
+report_nightly_ave_email_alerts_per_site_inc_EXCLUDE_GROUPID: 110021
+report_nightly_ave_email_alerts_per_site_inc_EXCLUDE: 0
+report_nightly_ave_email_alerts_per_site_inc_suffix: _inc_110021
+
+report_nightly_ave_sms_alerts_per_site_name: ave_sms_alerts_per_site
+report_nightly_ave_sms_alerts_per_site_format: csv
+report_nightly_ave_sms_alerts_per_site_partner: icontrol
+report_nightly_ave_sms_alerts_per_site_cluster: icontrol1
+report_nightly_ave_sms_alerts_per_site_schema: network
+report_nightly_ave_sms_alerts_per_site_START_DATE: 30 days ago
+report_nightly_ave_sms_alerts_per_site_END_DATE: today
+report_nightly_ave_sms_alerts_per_site_OTHER_PARAM: 5
+report_nightly_ave_sms_alerts_per_site_SELECT_ALL: 1
+report_nightly_ave_sms_alerts_per_site_EXCLUDE_GROUPID: 110021
+report_nightly_ave_sms_alerts_per_site_EXCLUDE: 1
+report_nightly_ave_sms_alerts_per_site_suffix: _all
+
+report_nightly_ave_sms_alerts_per_site_ex_name: ave_sms_alerts_per_site
+report_nightly_ave_sms_alerts_per_site_ex_format: csv
+report_nightly_ave_sms_alerts_per_site_ex_partner: icontrol
+report_nightly_ave_sms_alerts_per_site_ex_cluster: icontrol1
+report_nightly_ave_sms_alerts_per_site_ex_schema: network
+report_nightly_ave_sms_alerts_per_site_ex_START_DATE: 30 days ago
+report_nightly_ave_sms_alerts_per_site_ex_END_DATE: today
+report_nightly_ave_sms_alerts_per_site_ex_OTHER_PARAM: 5
+report_nightly_ave_sms_alerts_per_site_ex_SELECT_ALL: 0
+report_nightly_ave_sms_alerts_per_site_ex_EXCLUDE_GROUPID: 110021
+report_nightly_ave_sms_alerts_per_site_ex_EXCLUDE: 1
+report_nightly_ave_sms_alerts_per_site_ex_suffix: _ex_110021
+
+report_nightly_ave_sms_alerts_per_site_inc_name: ave_sms_alerts_per_site
+report_nightly_ave_sms_alerts_per_site_inc_format: csv
+report_nightly_ave_sms_alerts_per_site_inc_partner: icontrol
+report_nightly_ave_sms_alerts_per_site_inc_cluster: icontrol1
+report_nightly_ave_sms_alerts_per_site_inc_schema: network
+report_nightly_ave_sms_alerts_per_site_inc_START_DATE: 30 days ago
+report_nightly_ave_sms_alerts_per_site_inc_END_DATE: today
+report_nightly_ave_sms_alerts_per_site_inc_OTHER_PARAM: 5
+report_nightly_ave_sms_alerts_per_site_inc_SELECT_ALL: 0
+report_nightly_ave_sms_alerts_per_site_inc_EXCLUDE_GROUPID: 110021
+report_nightly_ave_sms_alerts_per_site_inc_EXCLUDE: 0
+report_nightly_ave_sms_alerts_per_site_inc_suffix: _inc_110021
+
+report_nightly_r1_name: config_stats
+report_nightly_r1_format: csv
+report_nightly_r1_partner: icontrol
+report_nightly_r1_cluster: icontrol1
+report_nightly_r1_schema: network
+report_nightly_r1_START_DATE: 30 days ago
+report_nightly_r1_END_DATE: today
+report_nightly_r1_SELECT_ALL: 1
+report_nightly_r1_EXCLUDE_GROUPID: 110021
+report_nightly_r1_EXCLUDE: 1
+report_nightly_r1_suffix: _all
+
+report_nightly_r1_ex_name: config_stats
+report_nightly_r1_ex_format: csv
+report_nightly_r1_ex_partner: icontrol
+report_nightly_r1_ex_cluster: icontrol1
+report_nightly_r1_ex_schema: network
+report_nightly_r1_ex_START_DATE: 30 days ago
+report_nightly_r1_ex_END_DATE: today
+report_nightly_r1_ex_SELECT_ALL: 0
+report_nightly_r1_ex_EXCLUDE_GROUPID: 110021
+report_nightly_r1_ex_EXCLUDE: 1
+report_nightly_r1_ex_suffix: _ex_110021
+
+report_nightly_r1_inc_name: config_stats
+report_nightly_r1_inc_format: csv
+report_nightly_r1_inc_partner: icontrol
+report_nightly_r1_inc_cluster: icontrol1
+report_nightly_r1_inc_schema: network
+report_nightly_r1_inc_START_DATE: 30 days ago
+report_nightly_r1_inc_END_DATE: today
+report_nightly_r1_inc_SELECT_ALL: 0
+report_nightly_r1_inc_EXCLUDE_GROUPID: 110021
+report_nightly_r1_inc_EXCLUDE: 0
+report_nightly_r1_inc_suffix: _inc_110021
+
+report_nightly_r2_name: log_stats
+report_nightly_r2_format: csv
+report_nightly_r2_partner: icontrol
+report_nightly_r2_cluster: icontrol1
+report_nightly_r2_schema: network
+report_nightly_r2_START_DATE: 30 days ago
+report_nightly_r2_END_DATE: today
+report_nightly_r2_SELECT_ALL: 1
+report_nightly_r2_EXCLUDE_GROUPID: 110021
+report_nightly_r2_EXCLUDE: 1
+report_nightly_r2_suffix: _all
+
+report_nightly_r2_ex_name: log_stats
+report_nightly_r2_ex_format: csv
+report_nightly_r2_ex_partner: icontrol
+report_nightly_r2_ex_cluster: icontrol1
+report_nightly_r2_ex_schema: network
+report_nightly_r2_ex_START_DATE: 30 days ago
+report_nightly_r2_ex_END_DATE: today
+report_nightly_r2_ex_SELECT_ALL: 0
+report_nightly_r2_ex_EXCLUDE_GROUPID: 110021
+report_nightly_r2_ex_EXCLUDE: 1
+report_nightly_r2_ex_suffix: _ex_110021
+
+report_nightly_r2_inc_name: log_stats
+report_nightly_r2_inc_format: csv
+report_nightly_r2_inc_partner: icontrol
+report_nightly_r2_inc_cluster: icontrol1
+report_nightly_r2_inc_schema: network
+report_nightly_r2_inc_START_DATE: 30 days ago
+report_nightly_r2_inc_END_DATE: today
+report_nightly_r2_inc_SELECT_ALL: 0
+report_nightly_r2_inc_EXCLUDE_GROUPID: 110021
+report_nightly_r2_inc_EXCLUDE: 0
+report_nightly_r2_inc_suffix: _inc_110021
+
+report_nightly_r3_name: security_panel_arm_consolidated
+report_nightly_r3_format: csv
+report_nightly_r3_partner: icontrol
+report_nightly_r3_cluster: icontrol1
+report_nightly_r3_schema: network
+report_nightly_r3_START_DATE: 30 days ago
+report_nightly_r3_END_DATE: today
+report_nightly_r3_SELECT_ALL: 1
+report_nightly_r3_NETWORK_ID: 00603504026c
+report_nightly_r3_EXCLUDE_GROUPID: 110021
+report_nightly_r3_EXCLUDE: 1
+report_nightly_r3_suffix: _all
+
+report_nightly_r3_ex_name: security_panel_arm_consolidated
+report_nightly_r3_ex_format: csv
+report_nightly_r3_ex_partner: icontrol
+report_nightly_r3_ex_cluster: icontrol1
+report_nightly_r3_ex_schema: network
+report_nightly_r3_ex_START_DATE: 30 days ago
+report_nightly_r3_ex_END_DATE: today
+report_nightly_r3_ex_SELECT_ALL: 0
+report_nightly_r3_ex_NETWORK_ID: 00603504026c
+report_nightly_r3_ex_EXCLUDE_GROUPID: 110021
+report_nightly_r3_ex_EXCLUDE: 1
+report_nightly_r3_ex_suffix: _ex_110021
+
+report_nightly_r3_inc_name: security_panel_arm_consolidated
+report_nightly_r3_inc_format: csv
+report_nightly_r3_inc_partner: icontrol
+report_nightly_r3_inc_cluster: icontrol1
+report_nightly_r3_inc_schema: network
+report_nightly_r3_inc_START_DATE: 30 days ago
+report_nightly_r3_inc_END_DATE: today
+report_nightly_r3_inc_SELECT_ALL: 0
+report_nightly_r3_inc_NETWORK_ID: 00603504026c
+report_nightly_r3_inc_EXCLUDE_GROUPID: 110021
+report_nightly_r3_inc_EXCLUDE: 0
+report_nightly_r3_inc_suffix: _inc_110021
+
+report_nightly_r4_name: admin_stats
+report_nightly_r4_format: csv
+report_nightly_r4_partner: icontrol
+report_nightly_r4_schema: admin
+report_nightly_r4_START_DATE: 30 days ago
+report_nightly_r4_END_DATE: today
+report_nightly_r4_SELECT_ALL: 1
+report_nightly_r4_EXCLUDE_GROUPID: 110021
+report_nightly_r4_EXCLUDE: 1
+report_nightly_r4_suffix: _all
+
+report_nightly_r4_ex_name: admin_stats
+report_nightly_r4_ex_format: csv
+report_nightly_r4_ex_partner: icontrol
+report_nightly_r4_ex_schema: admin
+report_nightly_r4_ex_START_DATE: 30 days ago
+report_nightly_r4_ex_END_DATE: today
+report_nightly_r4_ex_SELECT_ALL: 0
+report_nightly_r4_ex_EXCLUDE_GROUPID: 110021
+report_nightly_r4_ex_EXCLUDE: 1
+report_nightly_r4_ex_suffix: _ex_110021
+
+report_nightly_r4_inc_name: admin_stats
+report_nightly_r4_inc_format: csv
+report_nightly_r4_inc_partner: icontrol
+report_nightly_r4_inc_schema: admin
+report_nightly_r4_inc_START_DATE: 30 days ago
+report_nightly_r4_inc_END_DATE: today
+report_nightly_r4_inc_SELECT_ALL: 0
+report_nightly_r4_inc_EXCLUDE_GROUPID: 110021
+report_nightly_r4_inc_EXCLUDE: 0
+report_nightly_r4_inc_suffix: _inc_110021
+
+report_nightly_r5_name: current_device_status
+report_nightly_r5_format: csv
+report_nightly_r5_partner: icontrol
+report_nightly_r5_cluster: icontrol1
+report_nightly_r5_schema: network
+report_nightly_r5_START_DATE: 30 days ago
+report_nightly_r5_END_DATE: today
+report_nightly_r5_SELECT_ALL: 1
+report_nightly_r5_EXCLUDE_GROUPID: 110021
+report_nightly_r5_DEV_TYPE: all
+report_nightly_r5_EXCLUDE: 1
+report_nightly_r5_suffix: _all
+
+report_nightly_r5_ex_name: current_device_status
+report_nightly_r5_ex_format: csv
+report_nightly_r5_ex_partner: icontrol
+report_nightly_r5_ex_cluster: icontrol1
+report_nightly_r5_ex_schema: network
+report_nightly_r5_ex_START_DATE: 30 days ago
+report_nightly_r5_ex_END_DATE: today
+report_nightly_r5_ex_SELECT_ALL: 0
+report_nightly_r5_ex_EXCLUDE_GROUPID: 110021
+report_nightly_r5_ex_DEV_TYPE: all
+report_nightly_r5_ex_EXCLUDE: 1
+report_nightly_r5_ex_suffix: _ex_110021
+
+report_nightly_r5_inc_name: current_device_status
+report_nightly_r5_inc_format: csv
+report_nightly_r5_inc_partner: icontrol
+report_nightly_r5_inc_cluster: icontrol1
+report_nightly_r5_inc_schema: network
+report_nightly_r5_inc_START_DATE: 30 days ago
+report_nightly_r5_inc_END_DATE: today
+report_nightly_r5_inc_SELECT_ALL: 0
+report_nightly_r5_inc_EXCLUDE_GROUPID: 110021
+report_nightly_r5_inc_DEV_TYPE: all
+report_nightly_r5_inc_EXCLUDE: 0
+report_nightly_r5_inc_suffix: _inc_110021
+
+report_nightly_r6_name: device_offline_aggregated
+report_nightly_r6_format: csv
+report_nightly_r6_partner: icontrol
+report_nightly_r6_cluster: icontrol1
+report_nightly_r6_schema: network
+report_nightly_r6_START_DATE: 30 days ago
+report_nightly_r6_END_DATE: today
+report_nightly_r6_SELECT_ALL: 1
+report_nightly_r6_EXCLUDE_GROUPID: 110021
+report_nightly_r6_EXCLUDE: 1
+report_nightly_r6_suffix: _all
+
+report_nightly_r6_ex_name: device_offline_aggregated
+report_nightly_r6_ex_format: csv
+report_nightly_r6_ex_partner: icontrol
+report_nightly_r6_ex_cluster: icontrol1
+report_nightly_r6_ex_schema: network
+report_nightly_r6_ex_START_DATE: 30 days ago
+report_nightly_r6_ex_END_DATE: today
+report_nightly_r6_ex_SELECT_ALL: 0
+report_nightly_r6_ex_EXCLUDE_GROUPID: 110021
+report_nightly_r6_ex_EXCLUDE: 1
+report_nightly_r6_ex_suffix: _ex_110021
+
+report_nightly_r6_inc_name: device_offline_aggregated
+report_nightly_r6_inc_format: csv
+report_nightly_r6_inc_partner: icontrol
+report_nightly_r6_inc_cluster: icontrol1
+report_nightly_r6_inc_schema: network
+report_nightly_r6_inc_START_DATE: 30 days ago
+report_nightly_r6_inc_END_DATE: today
+report_nightly_r6_inc_SELECT_ALL: 0
+report_nightly_r6_inc_EXCLUDE_GROUPID: 110021
+report_nightly_r6_inc_EXCLUDE: 0
+report_nightly_r6_inc_suffix: _inc_110021
+
+############## END COM.ICONTROL.REPORTS #####################
+
+############## COM.ICONTROL.LOCAL.SESSION #####################
+session_server_hostname: session-poc.icontrol.com
+session_server_externalip: 216.206.189.167
+session_server_externallifestyleport: 11083
+session_server_externalecpport: 11084
+
+############## END COM.ICONTROL.LOCAL.SESSION #####################
+
+############## COM.ICONTROL.LOCAL.SERVER #####################
+service_machine_name: poc
+gateway_watchdog_disabled: false
+amqp_concurrency: 32
+amqp_prefetch: 2
+amqp_retry_maxAttempt: 3
+amqp_retry_initialInterval: 3000
+amqp_retry_maxInterval: 3000
+rest_amqp_uri: amqp://guest:guest@poc:5672?ConnectionTimeout: 20000&RequestedHeartbeat: 120&IdleTimeout=3600000&IdleThreshold=0
+ic_amqp_uri: amqp://guest:guest@poc:5672?ConnectionTimeout=20000&RequestedHeartbeat=120&IdleTimeout=3600000&IdleThreshold=0
+sms_Clients: icPPSClient\, smppClient\, honeywellClient\, dscClient\, telularClient
+util_ops_simstatus_honeywellprovider_enableHealthCheck: false
+util_ops_simstatus_dscprovider_enableHealthCheck: false
+server_environment: poc
+auditlogs_maxKeyLength: 100
+auditlogs_maxValueLength: 490
+pps_jasper_licenseKey: U2FsdGVkX18LB6noJHtF5GNaRWx4hZ84FuAAWYXJneHwt3F9AYIVjq++t6Zy+hCBNnUfqiQEje1cx4l7aXe+DQ==
+pps_jasper_version: 2.0
+#com_icontrol_pps_jasper_username:U2FsdGVkX195HedM6EGizAi++sURRxtQ8/zyzYyLmWM=
+pps_jasper_password: U2FsdGVkX1/QbH6M79FVGGkr4Fv8ESz/uWh/aqjcOa3R5LzusnDgjxA7xHfFo8qJ
+pps_loadBalancerPingStr: default send string
+server_gatewaymgr_installTimeoutMins: 4320
+pps_installTimeWindow: 72
+pps_jasper_accounts: Icontrol
+pps_jasper_owner: Icontrol
+pps_jasper_licenseKey: U2FsdGVkX18LB6noJHtF5GNaRWx4hZ84FuAAWYXJneHwt3F9AYIVjq++t6Zy+hCBNnUfqiQEje1cx4l7aXe+DQ==
+pps_jasper_version: 2.0
+pps_jasper_username: icontroldev
+pps_jasper_password: U2FsdGVkX1/QbH6M79FVGGkr4Fv8ESz/uWh/aqjcOa3R5LzusnDgjxA7xHfFo8qJ
+pps_jasper_communicationPlans: {\"Icontrol\":[1205401,1751502]}
+
+############## END COM.ICONTROL.LOCAL.SERVER #####################
+
+############## COM.ICONTROL.LOCAL.RELAY #####################
+relay_server_host: relay-poc.icontrol.com
+relay_server_host_stream: stream-poc.icontrol.com
+############## END COM.ICONTROL.LOCAL.RELAY #####################
+
+############## COM.ICONTROL.GLOBAL.SESSION #####################
+session_server_port_supporttcp: true
+session_server_port_supportaes: true
+session_server_port_supportssl: true
+session_server_keystore_file: /data/ic/certs/sessioninstance.keystore
+session_server_keystore_password: jhasd5jlwf89QWER32
+session_server_keystore_instance_password: jhasd5jlwf89QWER32
+session_server_request_handler_threads: 5
+session_server_lwgateway_syncthreadpoolsize: 2
+session_server_lwgw_autoackdelaymillis: 120000
+panel_firmware_lynx_C3: 20.20
+panel_firmware_lynx_C8: 20.20
+panel_firmware_lynx_BF: 20.20
+panel_firmware_lynx_C4: 20.20
+panel_firmware_lynx_D6: 3.01.057
+panel_firmware_lynx_DA: 3.01.057
+panel_firmware_lynx_D5: 3.01.057
+panel_firmware_lynx_DC: 3.01.057
+radio_firmware_lynx_C3: 2.6.38
+radio_firmware_lynx_C8: 2.6.38
+radio_firmware_lynx_BF: 2.6.38
+radio_firmware_lynx_C4: 2.6.38
+radio_firmware_lynx_D6: 2.4.16
+radio_firmware_lynx_DA: 2.4.16
+radio_firmware_lynx_D5: 2.4.16
+radio_firmware_lynx_DC: 2.4.16
+############## END COM.ICONTROL.GLOBAL.SESSION #####################
+
+############## COM.ICONTROL.GLOBAL.SERVER #####################
+services_File: conf/services.xml
+services_Monitor_Secs: 30
+services_File_Monitor_Secs: 10
+iphone_url: http://127.0.0.1:8080/xml/iPhone
+smtp_Server :  localhost
+dictionary_words :  conf/common_passwords.txt
+sessionServer_User :  portal
+sessionServer_Pass :  iportlay7
+relayServer_Login: portal
+relayServer_Pass: iportlay7
+smsgateway_device_Sms_Service:
+smsgateway_email_from: tap@icontrol.com
+smsgateway_numerex_dcws_host: not-used
+smsgateway_numerex_dcws_user: not-used
+smsgateway_numerex_dcws_pass: not-used
+partner_icontrol_provider_numberOfLevels: 1
+retention_icontrol_userdbs: user1
+retention_icontrol_networkdbs: icontrol1
+csr_partner: icontrol
+partner_default: icontrol
+server_eventbus_manager_listeners:
+partner_icontrol_notifications_portal_login :  https://portal-poc.icontrol.com/myhome/access/signin.jsp
+partner_icontrol_notifications_mobile_login :  https://mobile-poc.icontrol.com/mobile/access/signin.jsp
+notifications_message_In_Subject: false
+cache_ehcache_member_daemon_active: false
+sms_In_IP_Address_Mask: 0.0.0.0/0
+sms_Out_IP_Address_Mask: 10.101.140.0/24
+gateway_Registry_Rest_Admin_URL :  https://admin-registry.icontrol.com/rest
+rest_registry_login: registryadmin
+rest_registry_password: djwA47n0w
+rest_registry_partner: icontrol
+rest_registry_enabled: true
+rest_icregistry_login: registryadmin
+rest_icregistry_password: djwA47n0w
+partner_cookie_domain: .icontrol.com
+pps_enabled :  true
+cms_integration_enabled :  true
+lwgw_openhome_hd_camera_models: LWG_SerComm_8322\, LWG_SerComm_431
+ops_provisionprofile_devices :  XMPPiCamProvisionProfile\, XMPP8322ProvisionProfile\, XMPP431ProvisionProfile
+ops_provisionprofile_XMPP431ProvisionProfile_name :  XMPP431ProvisionProfile
+ops_provisionprofile_XMPP431ProvisionProfile_technology :  XMPP
+ops_provisionprofile_XMPP431ProvisionProfile_type :  LWG_SerComm_431
+ops_provisionprofile_impl_XMPP_LWG_SerComm_431_type :  LWG_SerComm_iCamera_1000
+3guc_Shared_Key :  U2FsdGVkX197eGReAgnIO/vC4w0Igs/PchriCZX0Vn4:
+sg_feature_enabled :  false
+smash_grab_topic :  test
+sg_entry_delay :  30000
+util_taskqueue_mainthreadpoolsize :  10
+mailer_maxQueueSize :  5
+server_datamanagerdb_logthreadpoolsize :  10
+session_server_lwgateway_resumethreadpoolsize :  10
+############## END COM.ICONTROL.GLOBAL.SERVER #####################
+
+##############  COM.ICONTROL.GLOBAL.RELAY #####################
+relay_server_instances: 10080
+relay_server_monitor_connCountMax: 10240
+relay_server_monitor_connCountInterval: 60000
+############## END COM.ICONTROL.GLOBAL.SERVER #####################
+
+##############  COM.ICONTROL.GLOBAL.DBUTILS #####################
+server_dbpool_debug :  shallow
+debug_Connection_Wrap: false
+partner_icontrol_admin_db :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_admin_db_reporting :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_ops_db :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_ops_db_reporting :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_db_icontrol1 :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_db_icontrol1_reporting :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_current_db :  icontrol1
+partner_icontrol_userdb_user1 :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_userdb_user1_reporting :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_current_userdb :  user1
+com_icontrol_gatewayregistry_db :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_temp_db :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+partner_icontrol_report_db :  jdbc:oracle:thin:icuser/icuserdba@dev-qa1.ce4kkbdlmj1u.us-west-1.rds.amazonaws.com:1522:devqa1
+com_icontrol_userdb_poolsize: 16
+com_icontrol_admindb_poolsize: 16
+com_icontrol_networkdb_poolsize: 64
+com_icontrol_tempdb_poolsize: 16
+com_icontrol_gatewayregistrydb_poolsize: 16
+com_icontrol_opsdb_poolsize: 8
+com_icontrol_reportdb_poolsize: 8
+dbpool_max_idle: 200
+############## END COM.ICONTROL.GLOBAL.DBUTILS #####################
+
+##############  COM.ICONTROL.GLOBAL.CA #####################
+ssl_keystore_file: /data/ic/certs/serverinstance.keystore
+ssl_keystore_pass: kjhr2WERLKwrt9453
+ssl_keystore_instance_alias: server-instance-key
+ssl_keystore_instance_pass: kjhr2WERLKwrt9453
+ssl_csr_retrytimeout: 60000
+ssl_pendingonly_requirecert: false
+############## END COM.ICONTROL.GLOBAL.CA #####################
+
+##############  COM.ICONTROL.GLOBAL.AUTH #####################
+auth_partner: icontrol
+auth_icontrol_client_sso_artifactFactory:
+auth_icontrol_client_sso_restTokenFactory:
+auth_icontrol_client_sso_domain:
+auth_icontrol_client_sso_idpMetadata:
+auth_icontrol_client_sso_restCert:
+auth_icontrol_client_sso_restKey:
+auth_icontrol_client_sso_keystore:
+auth_icontrol_client_sso_sigCert:
+auth_icontrol_client_sso_ksPassword:
+auth_icontrol_client_sso_sigKeyAlias:
+auth_icontrol_client_sso_sigKeyPassword:
+auth_icontrol_client_sso_idpIssuer:
+auth_icontrol_client_sso_restIssuer:
+auth_icontrol_client_sso_spIssuer:
+auth_icontrol_client_sso_ssoLoginURL:
+auth_icontrol_client_sso_ssoRequestEndpoint:
+auth_icontrol_client_sso_sloLogoutURL:
+auth_icontrol_client_sso_sloRequestEndpoint:
+auth_icontrol_client_sso_sloResponseEndpoint:
+auth_icontrol_admin_ldap_providerURL:
+auth_icontrol_admin_ldap_keystore:
+auth_icontrol_admin_ldap_ksPassword:
+auth_icontrol_admin_ldap_baseDN:
+auth_icontrol_admin_ldap_principalSuffix:
+auth_icontrol_admin_ldap_usernameAttr:
+auth_icontrol_admin_ldap_GUIDAttr:
+auth_icontrol_admin_ldap_binaryGUID:
+auth_icontrol_admin_ldap_groupAttr:
+auth_icontrol_admin_ldap_emailAttr:
+auth_icontrol_admin_ldap_displayNameAttr:
+auth_icontrol_keystore: /data/ic/certs/ichome.keystore
+auth_icontrol_sigCert:
+auth_icontrol_ksPassword: JegYXa2eNUdEmuR
+auth_icontrol_sigKeyAlias: ichome
+auth_icontrol_sigKeyPassword: JegYXa2eNUdEmuR
+############## END COM.ICONTROL.GLOBAL.AUTH #####################
+
+##############  COM.ICONTROL.DYNAMIC.SESSION #####################
+session_server_relay_user: portal
+session_server_relay_pass: iportlay7
+session_server_enable_control_hub: true
+session_server_mempool_lwgroupnames:
+session_lynx_auto_connect: true
+############## END COM.ICONTROL.DYNAMIC.SESSION #####################
+
+##############  COM.ICONTROL.DYNAMIC.RELAY #####################
+relay_server_status_relay_svrauth_name: portal
+relay_server_status_relay_svrauth_pass: iportlay7
+relay_server_svrcert_file: /data/ic/certs/relaystaricontrol.keystore
+relay_server_svrcert_file_pass: chrispass
+############## END COM.ICONTROL.DYNAMIC.RELAY #####################
+
+##############  COM.ICONTROL.DYNAMIC.CA #####################
+gateway_Serial_Prefix: 00
+key_Global_Code: r4f8aKad
+key_Global_Code_ngHub: noViYE3r
+key_Global_Code_tssc: UJ2y5sE3
+
+############## END COM.ICONTROL.DYNAMIC.CA #####################
+
+##############  COM.ICONTROL.DYNAMIC.SERVER #####################
+util_logLevel : FINER
+notifications_minimum_delay :  1000
+default_Gateway_Sync_URL: https://ihub-poc.icontrol.com/gw
+rest_server_login: ic4372
+rest_server_password: Fhwwr5343H
+rest_server_connectionTimeout: 5000
+rest_server_readTimeout: 30000
+rest_session_login: ic4372
+rest_session_password: Fhwwr5343H
+rest_localhost_login: ic4372
+rest_localhost_password: Fhwwr5343H
+server_gatewaymgr_support_email: gwoffline-poc.icontrol.com
+server_gatewaymgr_support_offlineGatewayNotify: false
+server_gatewaymgr_support_offlineGatewayHistoryCount: 100
+server_gatewaymgr_support_bootGatewayNotify: false
+server_gatewaymgr_support_bootGatewayHistoryCount: 10
+retention_config_maxStepDays :  10
+retention_config_stepIntervalDays :  1
+session_server_external_host: gsess-poc.icontrol.com
+session_server_external_port: 11082
+gatewayservice_validateWanIP :  true
+gatewayservice_updateWanIPVideoUpload :  false
+gatewayservice_updateWanIPGatewaySync :  true
+gatewayservice_useLocalRestClient: true
+server_gateway_persist_asyncmode: true
+server_gateway_persist_tempdir: /data/ic/mediaTemp
+server_gateway_garbage_sweepcycle: 60000
+media_server_support:
+rest_portal_login:
+rest_portal_password:
+rest_remoteserver_password:
+relayapi_certstore_path: resources/cacerts.jks
+relayapi_certstore_password: chrispass
+rest_iphone_incompatibleprefixes: iphone-client/3,iphone/3,iphone/4,iphone/5,iphone/6,iphone/7.0
+rest_ngaandroid_upgradeWarning_AppVersions: ngaandroid/0
+rest_iPhone_upgradeWarning_AppVersions: iPhone/7*
+cms_fibro_healthcheck_config :  <healthCheckConfigList><healthCheckConfig></cmsName>Test CMS</cmsName><dnis>1111</dnis><iccid>1234567890</iccid></healthCheckConfig><healthCheckConfig><cmsName>S & G Test CMS</cmsName><dnis>1111</dnis><iccid>1234567890</iccid></healthCheckConfig></healthCheckConfigList>
+icontrolprovisioning_dev_host : https://gsess-poc.icontrol.com
+icontrolprovisioning_prod_host: https://gsess-poc.icontrol.com
+#pps_configserver_healthcheckaddress: : https://gsess-poc.icontrol.com
+pps_adminRestServer: https://admin-poc.icontrol.com
+pps_portalRestServer: https://portal-poc.icontrol.com
+pps_sessionRestServer: https://gsess-poc.icontrol./om
+pps_partner: icontrol
+pps_useRemoteConnection: false
+pps_rateCodeMapping: {"Jasper/AT&T": [{\"Icontrol\": [[["Icontrol One-2 - 50kB 2Way Voice US_CAN"~"Icontrol One-2 - 50kB 2Way Voice US_CAN"]~["AlarmsOnly+Cellular"]]~[["Icontrol One-2 - 250kb 2Way Voice US_CAN"~"Icontrol One-2 - 250kb 2Way Voice US_CAN"]~["Cellular"]]~[["Icontrol One-2 - 50kB 2Way Voice US_CAN"~"Icontrol One-2 - 50kB 2Way Voice US_CAN"]]}]}
+ppscfgserver_UdpConfigServer_partner: icontrol
+util_ops_simstatus_icsimservicedb_novatel: false
+############## END COM.ICONTROL.DYNAMIC.SERVER #####################

@@ -1,0 +1,114 @@
+###############################################################################
+# This file is used to configure the server back end.
+###############################################################################
+
+#
+# NB. When running on windows, foward slash (/) is converted to backslash (\)
+# in all paths so that directories should be of the form:
+# C:/Program Files/apache-tomcat ....
+#
+
+###############################################################################
+# Location of configured tomcat servers and local directories
+###############################################################################
+
+# This is the base directory to which all other paths are relative
+basePath = "{{base_Path}}"
+
+# Directory that holds all of the device type files.
+devTypeHome = "{{ devType_Home }}"
+
+# Directory in which the gateway firmware images are stored.
+fwHome = "{{ fw_Home }}"
+
+# The directory in which user pictures are stored.
+com.icontrol.datamanager.cameraImagePath = "{{ datamanager_cameraImagePath }}"
+
+# The directories that stores gateway debug logs and backup data.
+com.icontrol.gatewaymanager.gatewayLogPath = "{{ gatewaymanager_gatewayLogPath }}"
+com.icontrol.gatewaymanager.gatewayFilesPath = "{{ gatewaymanager_gatewayFilesPath }}"
+com.icontrol.gatewaymanager.gatewayBackupPath = "{{ gatewaymanager_gatewayBackupPath }}"
+
+# Files for maintenance tool
+com.icontrol.maintenance.servers = "{{ maintenance_servers }}"
+com.icontrol.maintenance.devicelist = "{{ maintenance_devicelist }}"
+
+# Directory where log files will get stored.
+com.icontrol.util.logDir = "{{util_logDir}}"
+
+# size and number of rolled log files:
+com.icontrol.gatewaymanager.gatewayLogSize="{{ gatewaymanager_gatewayLogSize }}"
+com.icontrol.gatewaymanager.gatewayLogCount="{{ gatewaymanager_gatewayLogCount }}"
+
+# Test file used by automated tests.
+# com.icontrol.reader.test1 = conf/test/testinput.txt
+
+# File that contains the list of client-side browsers.
+com.icontrol.browser.names = "{{ browser_names }}"
+
+# File that contains the list of client-side operating systems.
+com.icontrol.browser.os = "{{ browser_os }}"
+
+# Prefix of the files that contain the set of supported
+# and unsupported browsers.  There is one file for each application.
+# The actual files append ".portal", ".mobile", and ".activation" to this.
+com.icontrol.browser.support = "{{ browser_support }}"
+
+# File that contains mobile browser categories.
+com.icontrol.browser.category.mobile = "{{ browser_category_mobile }}"
+
+# Server preferences setting
+com.icontrol.preference.config.xml = "{{ preference_config_xml }}"
+
+# Cache provider setting
+com.icontrol.cache.provider= "{{ cache_provider }}"
+
+# Admin report templates
+com.icontrol.admin.reportPath = "{{admin_reportPath}}"
+
+# Admin nightly report output directory
+com.icontrol.admin.reportOutputPath = "{{admin_reportOutputPath}}"
+
+# PPS profile configuration
+com.icontrol.ppsProfiles = "{{pps_Profiles}}"
+
+# Install types configuration
+com.icontrol.installtypes = "{{install_types}}"
+
+###############################################################################
+# SMS Gateway properties
+###############################################################################
+
+# smpp.config.file=conf/com.icontrol.smpp.properties.none
+smpp.config.file= "{{smpp_config_file}}"
+# smpp.configbackup.file=conf/com.icontrol.smppbackup.properties.none
+smpp.configbackup.file="{{smpp_configbackup_file}}"
+
+###############################################################################
+# ffmpeg path and timeout preferences
+###############################################################################
+
+# Location that holds ffmpeg binary
+# ffmpegPath = bin
+
+# Max time in ms to wait for ffmpeg completion
+ffmpegWait= "{{ffmpeg_Wait}}"
+
+# ffmpeg command line params
+# Use <outvideo>.3gpp and <outjpg>.jpg in the parms to be overwritten by the server. Must include at least <outjpg>.jpg
+# Example: -an -y -i <input> -b 100k -r 10 -s qcif -f 3gp <outvideo>.3gpp -b 250k -r 5 -s qvga -f image2 <outjpg>.jpg
+# ffmpegWait=-an -y -i <input> -b 100k -r 10 -s qcif -f 3gp <outvideo>.3gpp -b 250k -r 5 -s qvga -f image2 <outjpg>.jpg
+
+###############################################################################
+# ThirdPartyAppVersions preferences
+###############################################################################
+
+# interval for reloading global version xml file, measued in minutes
+appVersionCheckInterval = "{{appVersion_CheckInterval}}"
+
+# interval for a user's browser to recheck newer app version
+appVersionBrowserCheckInterval = "{{appVersion_BrowserCheckInterval}}"
+
+# URL of where the global app version xml file resides
+appVersionCheckURI = "{{appVersion_CheckURI}}"
+

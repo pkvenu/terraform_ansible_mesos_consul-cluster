@@ -1,0 +1,24 @@
+###############################################################################
+# This is the global data-center (or server-cluster-specific) file
+# which is used to configure the server back end.
+###############################################################################
+
+
+###############################################################################
+# SSL CA properties
+###############################################################################
+
+ssl.keystore.file= "{{ssl_keystore_file}}"
+ssl.keystore.pass="{{ssl_keystore_pass}}"
+ssl.keystore.instance.alias= "{{ssl_keystore_instance_alias}}"
+ssl.keystore.instance.pass= "{{ssl_keystore_instance_pass}}"
+
+ssl.csr.retrytimeout= "{{ssl_csr_retrytimeout}}"
+# allow clients to connect without cert if there is a pending paid key (but not signed or connected)
+ssl.pendingonly.requirecert= "{{ssl_pendingonly_requirecert}}"
+
+###############################################################################
+# App Key Manager properties
+###############################################################################
+#com.icontrol.auth.appkey.file=
+#com.icontrol.auth.appkey.pass=

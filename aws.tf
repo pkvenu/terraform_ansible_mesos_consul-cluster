@@ -88,6 +88,29 @@ resource "aws_instance" "worker_nodes" {
     dc = "${var.datacenter}"
   }
 }
+resource "aws_db_instance" "oracle_rds" {
+  identifier = "${var.identifier}"
+  allocated_storage = "${var.storage}"
+  engine = "${var.engine}"
+  engine_version = "${lookup(var.engine_version, var.engine)}"
+  instance_class = "${var.instance_class}"
+  name = "${var.db_name}"
+  username = "${var.db_username}"
+  password = "${var.db_password}"
+  availability_zone = "${var.availability_zone}"
+  count = "${var.db_count}"
+  vpc_security_group_ids = ["${aws_security_group.oracle.id}"]
+  key_name = "${aws_key_pair.deployer.key_name}"
+  associate_public_ip_address=true
+  subnet_id = "${aws_subnet.main.id}"
+
+  tags {
+    Name = "Oracle-${format("%02d", count.index+1)}"
+    sshUser = "${var.ssh_username}"
+    role = "DB"
+    dc = "${var.datacenter}"
+  }
+}
 
 resource "aws_security_group" "control" {
   name = "control"
@@ -339,6 +362,24 @@ resource "aws_security_group" "consul" {
     from_port = 8600
     to_port = 8600
     protocol = "udp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+resource "aws_security_group" "oracle" {
+  name = "oracle DB"
+  description = "Security group for oracle RDS instances"
+  vpc_id="${aws_vpc.main.id}"
+  ingress {
+    from_port = 0
+    to_port = 65535
+    protocol = "TCP"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
 }

@@ -1,0 +1,190 @@
+###############################################################################
+# This is the dynamic data-center (or server-cluster-specific) file
+# which is used to configure the server back end.
+# The server will poll for changes to this file every 10 seconds
+###############################################################################
+
+# Constant that specifies the log level.
+# Options are the names of the java.util.logging.Level constants:
+# SEVERE (highest), WARNING, INFO, CONFIG, FINE, FINER, FINEST (lowest)
+com.icontrol.util.logLevel = "{{util_logLevel}}"
+
+# minimum delay time in msec (per-queue TTL) for notifications become dead-lettered on
+# the queue the actual detention time is the lower value between per-queue and per-message TTLs
+notifications.minimum.delay = "{{notifications_minimum_delay}}"
+
+# default gatewaysync URL
+defaultGatewaySyncURL= "{{default_Gateway_Sync_URL}}"
+
+###############################################################################
+# Rest Service Configs
+###############################################################################
+com.icontrol.rest.server.login="{{rest_server_login}}"
+com.icontrol.rest.server.password="{{rest_server_password}}"
+com.icontrol.rest.server.connectionTimeout="{{rest_server_connectionTimeout}}"
+com.icontrol.rest.server.readTimeout="{{rest_server_readTimeout}}"
+com.icontrol.rest.session.login="{{rest_session_login}}"
+com.icontrol.rest.session.password="{{rest_session_password}}"
+com.icontrol.rest.localhost.login="{{rest_localhost_login}}"
+com.icontrol.rest.localhost.password="{{rest_localhost_password}}"
+
+#com.icontrol.rest.restrequesttracker.throttlePeriodInSecs = 60
+#com.icontrol.rest.restrequesttracker.throttleMaxRequestsPerPeriod = 120
+#com.icontrol.rest.restrequesttracker.throttleExcludePathRegex = ^/media(.*)
+#com.icontrol.rest.restrequesttracker.throttleExcludeIPAddressRegex = ^127.0.0.1$
+
+# advanced messaging Rest Login
+# com.icontrol.rest.remoteserver..password=
+
+###############################################################################
+# Gateway Watchdog Configs
+###############################################################################
+
+# com.icontrol.server.gatewaymgr.support.email=awolgw@icontrol.com
+com.icontrol.server.gatewaymgr.support.email="{{server_gatewaymgr_support_email}}"
+
+com.icontrol.server.gatewaymgr.support.offlineGatewayNotify="{{server_gatewaymgr_support_offlineGatewayNotify}}"
+com.icontrol.server.gatewaymgr.support.offlineGatewayHistoryCount="{{server_gatewaymgr_support_offlineGatewayHistoryCount}}"
+
+com.icontrol.server.gatewaymgr.support.bootGatewayNotify="{{server_gatewaymgr_support_bootGatewayNotify}}"
+com.icontrol.server.gatewaymgr.support.bootGatewayHistoryCount="{{server_gatewaymgr_support_bootGatewayHistoryCount}}"
+
+
+###############################################################################
+# Retention Daemon configs
+###############################################################################
+
+# max number of days to trim at a time
+retention.config.maxStepDays = "{{retention_config_maxStepDays}}"
+
+# minimum time between runs
+retention.config.stepIntervalDays = "{{retention_config_stepIntervalDays}}"
+
+
+###############################################################################
+#  Gateway Service
+##############################################################################
+
+# session server virtual host and port for ihub to persistent socket session server
+com.icontrol.session.server.external.host="{{session_server_external_host}}"
+com.icontrol.session.server.external.port="{{session_server_external_port}}"
+
+# Partner example
+# com.icontrol.session.server.partner.icontrol.external.host=gsess-poc.icontrol.com
+
+# turn on/off Wan IP check on video clip upload. Default is set to true
+com.icontrol.gatewayservice.validateWanIP = "{{gatewayservice_validateWanIP}}"
+
+# turn on/off Wan IP update on video clip upload. Default is set to false.
+# set to true in production environments when load balancer does not pass correct wanaddr to session server.
+com.icontrol.gatewayservice.updateWanIPVideoUpload = "{{gatewayservice_updateWanIPVideoUpload}}"
+
+# turn on/off Wan IP update on gateway sync. Default is set to true.
+# set to false in production environments when load balancer does not pass correct wanaddr to session server.
+com.icontrol.gatewayservice.updateWanIPGatewaySync = "{{gatewayservice_updateWanIPGatewaySync}}"
+
+# switch between LocalRestClient (true) and ServerRestClient (false)
+# in case of media server, it requires additional properties to use ServerRestClient
+com.icontrol.gatewayservice.useLocalRestClient="{{gatewayservice_useLocalRestClient}}"
+
+# turn on/off image/video process in asynchronous mode (via RabbitMQ)
+com.icontrol.server.gateway.persist.asyncmode="{{server_gateway_persist_asyncmode}}"
+
+# set the temporary content storage for image/video in asynchronous mode
+# DO NOT ADD THE TRAILING FILE SEPARATOR
+com.icontrol.server.gateway.persist.tempdir="{{server_gateway_persist_tempdir}}"
+
+# the (soft) longevity of a temporary media file before being garbage-swept
+com.icontrol.server.gateway.garbage.sweepcycle="{{server_gateway_garbage_sweepcycle}}"
+
+###############################################################################
+# Media Server
+###############################################################################
+
+# the switch that turns Gateway Service functioned as Media Server
+# (possible values: [enable | disable | NONE])
+com.icontrol.media.server.support="{{media_server_support}}"
+
+# media server URL for ihub to upload pictures and clips
+# e.g. https://ihub-sirius3.icontrol.com/gw/GatewayService
+# com.icontrol.media.server.external.url="{{}}"
+
+# URL for media server access to REST-Portal and vice versa
+#portal.server.rest.url="{{}}"
+
+# credential for the authentication by REST-Portal
+com.icontrol.rest.portal.login="{{rest_portal_login}}"
+com.icontrol.rest.portal.password="{{rest_portal_password}}"
+
+# the counterpart of previous credential setting used by portal server
+com.icontrol.rest.remoteserver..password="{{rest_remoteserver_password}}"
+
+###############################################################################
+# Relay API (used by relay clients)
+###############################################################################
+
+# optional path to relay api cert store (needed to connect to relay server admin interface/tomcat)
+com.icontrol.relayapi.certstore.path="{{relayapi_certstore_path}}"
+
+# optional password for relay api cert store
+com.icontrol.relayapi.certstore.password="{{relayapi_certstore_password}}"
+
+###############################################################################
+# DiskBalancer
+###############################################################################
+
+# List of disk partitions for all partners/clusters, separated by comma
+# format: com.icontrol.diskbalancer.partitions=<partition name 1>, <partition name 2>
+# example: com.icontrol.diskbalancer.partitions=pictures, pictures2
+
+# List of disk partitions for a specific partner
+# com.icontrol.diskbalancer.partitions.<partner>=<partition name 1>, <partition name 2>
+
+# List of disk partitions for a specific cluster for a partner
+# com.icontrol.diskbalancer.partitions.<partner>.<cluster>=<partition name 1>, <partition name 2>
+
+# Partition aliases. Use this if a partition name was changed after files were written
+# com.icontrol.diskbalancer.aliases.<alias>=<partition name>
+
+# Poison pill to force iPhone app upgrade through user agent header (leqacy - pre 8.0.0)
+com.icontrol.rest.iphone.incompatibleprefixes="{{rest_iphone_incompatibleprefixes}}"
+
+# Poison pill to force client app upgrade through X-appVersion header("appName/version") for 8.0.0 server release and later.
+#     when a client passes the X-appVersion header the value is checked against the list of values below
+#     from the key that is specific to that app name key; if the configured value doesn't specify a version
+#     range using * then the server will do an exact match to the version coming from the client, otherwise will
+#     check if the client app version is in the range.
+# Rules for the key/values added in the config
+#   1. THE KEY HAS TO BE THE APP NAME STRIPPED OF SPACES AND NON "a-zA-Z0-9_-" characters
+#      for ex: "Test @iPhone-1_App" app name should be put as "TestiPhone-1_App"
+#   2. THE PREF VALUES NEED TO BE STRIPPED OF NON "a-zA-Z0-9_-" characters (spaces can be included)
+#      for ex: "Test @iPhone-1_App" can be added as a value "Test iPhone-1_App"
+com.icontrol.rest.ngaandroid.upgradeWarningAppVersions="{{rest_ngaandroid_upgradeWarning_AppVersions}}"
+com.icontrol.rest.iPhone.upgradeWarningAppVersions="{{rest_iPhone_upgradeWarning_AppVersions}}"
+
+###############################################################################
+# CMS Properties
+###############################################################################
+# The format of CMS fibro healthcheck config is
+# <healthCheckConfigList><healthCheckConfig><cmsName></cmsName><dnis></dnis><iccid></iccid></healthCheckConfig></healthCheckConfig></healthCheckConfigList>
+# it supports multiple healthCheckConfig elements
+com.icontrol.cms.fibro.healthcheck.config = "{{cms_fibro_healthcheck_config}}"
+
+###############################################################################
+# PPS Properties
+###############################################################################
+icontrolprovisioning.dev.host ="{{icontrolprovisioning_dev_host}}"
+icontrolprovisioning.prod.host="{{icontrolprovisioning_prod_host}}"
+#com.icontrol.pps.configserver.healthcheckaddress==https://gsess-poc.icontrol.com
+com.icontrol.pps.adminRestServer="{{pps_adminRestServer}}"
+com.icontrol.pps.portalRestServer="{{pps_portalRestServer}}"
+com.icontrol.pps.sessionRestServer="{{pps_sessionRestServer}}"
+com.icontrol.pps.partner="{{pps_partner}}"
+com.icontrol.pps.useRemoteConnection="{pps_useRemoteConnection}}"
+#com.icontrol.pps.rateCodeMapping="{{pps_rateCodeMapping}}"
+###############################################################################
+# Placeholders for additional properties, or overridden default values
+###############################################################################
+
+com.icontrol.ppscfgserver.UdpConfigServer.partner="{{ppscfgserver_UdpConfigServer_partner}}"
+com.icontrol.util.ops.simstatus.icsimservicedb.novatel="{{util_ops_simstatus_icsimservicedb_novatel}}"

@@ -1,0 +1,52 @@
+###############################################################################
+# This is the global data-center (or server-cluster-specific) file
+# which is used to configure the server back end.
+###############################################################################
+
+
+###############################################################################
+# Session server properties
+###############################################################################
+com.icontrol.session.server.port.supporttcp="{{session_server_port_supporttcp}}"
+com.icontrol.session.server.port.supportaes="{{session_server_port_supportaes}}"
+com.icontrol.session.server.port.supportssl="{{session_server_port_supportssl}}"
+
+com.icontrol.session.server.keystore.file="{{session_server_keystore_file}}"
+com.icontrol.session.server.keystore.password="{{session_server_keystore_password}}"
+com.icontrol.session.server.keystore.instance.password="{{session_server_keystore_instance_password}}"
+
+# default is 50
+#com.icontrol.session.server.request_handler_threads="{{session_server_request_handler_threads}}"
+com.icontrol.session.server.request_handler_threads="{{session_server_request_handler_threads}}"
+# default is 20
+#com.icontrol.session.server.lwgateway.syncthreadpoolsize="{{session_server_lwgateway_syncthreadpoolsize}}"
+com.icontrol.session.server.lwgateway.syncthreadpoolsize="{{session_server_lwgateway_syncthreadpoolsize}}"
+
+# Slow pool delay before immediate ack
+com.icontrol.session.server.lwgw.autoackdelaymillis="{{session_server_lwgw_autoackdelaymillis}}"
+
+#############################################################################
+# Minimum panel firmware versions for Lynx
+#   Format: com.icontrol.panel.lynx.firmware.<compass id>=XX.XX.XX
+#############################################################################
+com.icontrol.panel.firmware.lynx.C3="{{panel_firmware_lynx_C3}}"
+com.icontrol.panel.firmware.lynx.C8="{{panel_firmware_lynx_C8}}"
+com.icontrol.panel.firmware.lynx.BF="{{panel_firmware_lynx_BF}}"
+com.icontrol.panel.firmware.lynx.C4="{{panel_firmware_lynx_C4}}"
+com.icontrol.panel.firmware.lynx.D6="{{panel_firmware_lynx_D6}}"
+com.icontrol.panel.firmware.lynx.DA="{{panel_firmware_lynx_DA}}"
+com.icontrol.panel.firmware.lynx.D5="{{panel_firmware_lynx_D5}}"
+com.icontrol.panel.firmware.lynx.DC="{{panel_firmware_lynx_DC}}"
+
+#############################################################################
+# Minimum radio firmware versions for Lynx
+#   Format: com.icontrol.radio.lynx.firmware.<compass id>=XX.XX.XX
+#############################################################################
+com.icontrol.radio.firmware.lynx.C3="{{radio_firmware_lynx_C3}}"
+com.icontrol.radio.firmware.lynx.C8="{{radio_firmware_lynx_C8}}"
+com.icontrol.radio.firmware.lynx.BF="{{radio_firmware_lynx_BF}}"
+com.icontrol.radio.firmware.lynx.C4="{{radio_firmware_lynx_C4}}"
+com.icontrol.radio.firmware.lynx.D6="{{radio_firmware_lynx_D6}}"
+com.icontrol.radio.firmware.lynx.DA="{{radio_firmware_lynx_DA}}"
+com.icontrol.radio.firmware.lynx.D5="{{radio_firmware_lynx_D5}}"
+com.icontrol.radio.firmware.lynx.DC="{{radio_firmware_lynx_DC}}"
